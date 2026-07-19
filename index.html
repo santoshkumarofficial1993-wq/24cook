@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavor Haven – Delicious Recipes for Every Kitchen</title>
+    <meta name="description" content="Discover delicious recipes for every occasion. Simple recipes, expert cooking tips, and fresh meal ideas for home cooks of every skill level." />
+    <meta name="keywords" content="recipes, cooking, food, meal ideas, healthy recipes, vegetarian, vegan, dinner, lunch, breakfast" />
+    <link rel="canonical" href="https://flavorhaven.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Flavor Haven – Delicious Recipes for Every Kitchen" />
+    <meta property="og:description" content="Simple recipes, expert cooking tips, and fresh meal ideas for home cooks of every skill level." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flavorhaven.com/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&h=630&fit=crop" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flavor Haven – Delicious Recipes for Every Kitchen" />
+    <meta name="twitter:description" content="Simple recipes, expert cooking tips, and fresh meal ideas for home cooks." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&h=630&fit=crop" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FF6B35'/%3E%3Cpath d='M35 30 L50 20 L65 30 L65 50 L50 60 L35 50 Z' fill='%23FFFFFF' opacity='0.9'/%3E%3Cpath d='M30 40 L70 40 L70 45 L30 45 Z' fill='%23FFFFFF' opacity='0.7'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23FFFFFF' opacity='0.6'/%3E%3C/svg%3E" />
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFCSURBVDhPpZO7SgNBFIY/s7s7m2zcrCQYFCwEW62sBAsbwReQ1MELgoj4DAo2glaCIAgWgp0WdmJhJ2gQjW7ezs7Zogm7u6ZZ/P8/5/7nzDkD9V2SeFz1ebzYyT1E1C0ByqrqCMsu+ThLWj4E3nJ/OC5GcRA/b9vA8s1VcpbBpxcPDLf6Q9lTdz4H4O0jO+9elouMv7V41dc5hQx1/uopATN0T1PJiwR6NiwAho4u6VR5fIKSqjK8mTHw8d4kvR5cObf2pWkOoH4kL4p8pKp3gO9mAN4CDBZ3QqGZdv9sPgtPNmeuPMl7tseu6Uq/rKqYOw+uE5YwNh83lW3AdHlD4g9S9wy9Plhfy6JtJ/XXbKqg63aCvy3bgn3u4T6g7jHqln3QyNk/z38AvOb7i6jjkBAAAAAASUVORK5CYII=" />
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGdSURBVFiF1Ze9SgNBEIC/uSQIoiA2ogpWavxBLFQIRYigMYhINChEUNHCRgV9rG0sBAsfwNrGRiFJdLm5HcHcXXJ3BX/wgb27u53Zb2cYWcL3IwgP6WVukRf3CTs8PFeE3y04V3zdUhyLT5lLJIJm7jchgZ0WMFpkvbnNLYRQjMLu6/PLFk7K/MdMYbM6DqWJctw9ZcKc3aMmY4tHLySJbAypFalS7+IEgRC6NpD2JQQhN+4S7Lajb8prQuPdgXhEMIhD0Qn6KjwDlSBt6d3iFjDzrmof0YlyB+5B5rBWMDJ85wL2mso++8UKBk4hKkAoZMBcoSXm21WfUt5cA7tHjTSu7hSqhO14wwPAumuyOHHfc3NBL4M8B2RzQb1/NT8cHpxrgOpDoO+AuZb4p8zxHrCl9grqD+zpnA7gGVh49W0tInuAeQDaTk8iWIA3aAp3JZz3SN2c5Bn4Rr4BbWpMlJx2GrV20m+edcJ78yEe1Nuq7+TfAj5XhXvQByLhPk3vP/8C4iwBqZCNBE4AAAAASUVORK5CYII=" />
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAK/SURBVHgB7Zg9axRBFIaf2Y2JmNxFSiPoT2jAX/BH2CcsJASLkNSpBAQiIghpRCIK/gaBlKKFKGhhQAhWi5A2mMImIBY2CkEErxdv352dmS2y3M3sfrCwsztz7j3POWfOHJkFQgjhP8a94ErwUQ+PhSFDXvKVe+C1oKeG/or1TV3Qc0uWjHVug5uGatkqJcQjuPeggXgAXw1d83MHwdfEa0PXW5kCVtBz6DGCb8DXwx+9Dd4Lvhv6p+BroOVeY2vQ1yTLLGt4DNct77k4WZ/ixB7ghBh2LCbw5bs4asnGgt7sxNvgWHBZ7lYFL23sBHfBXOZ3fTN0m2GFm3FOecVKsb1twUsTizj4uVqPssDSz6jXW/Ih9xk8cdl3sK0yrmRhiWAt9Le8cM/brnO+cxm58vxrErwSnEsY8wS+vxYGnO9cQr6CjqgM3ba4CpXddg1jbgQ7Z2kb4dCC3R6s/H2cft4TfFqWr3jvURj6Mx7+8eHpBpM/z2/O2vHeJf76fE9G9y6A386zsr1LT17e5wEHwHfOQS/4y6KzrEv2iPcq/Rl57yS/3kZ+gr9kn1fyfXzmeCxzB/AU2rJ9DJfyDcpcTlBZfO+Ce68N4d6+ZX6zCbT9/kZ+PmuN1llOVmnyedD4Po6m8f2l80z+2C3j0tfwB19Am9/eWT/4PPgfuiQrVIn+AXn3VjQ79AbqOkqLuw4+OP9+0xLLXvSuIFsJWQLWABkDRoA1QEaAEUAIkBFgBBACZAQYAYQAGQFGAKGwFdABydZBVsPGSw4Mfkt6vxL6sRZDWM5WOCDAIoAQQAiQEWAEEAq7Anlvt7H2Azs9PP6i4N+Q1XG8QvJhuxO8F5/XXYr/s9S7IfBD8lQe2Ow/BhwAhAAZAUYAIUBGgBFACJARYAQQAmQEGAGEABkBRgAhQEaAEUAIkBFgBBACZAQYAYQAGQFGAJEQWAFqB8gxdF0JXwAAAABJRU5ErkJggg==" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --color-primary: #FF6B35;
+            --color-primary-dark: #E55A2B;
+            --color-primary-light: #FF8A5C;
+            --color-secondary: #F8F5F2;
+            --color-accent: #2E7D32;
+            --color-accent-light: #4CAF50;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --color-white: #FFFFFF;
+            --color-gray-100: #f8f9fa;
+            --color-gray-200: #e9ecef;
+            --color-gray-300: #dee2e6;
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+            --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
+            --radius-card: 16px;
+            --radius-btn: 50px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        /* ===== Dark Mode ===== */
+        [data-theme="dark"] {
+            --color-secondary: #1a1a2e;
+            --color-white: #16213e;
+            --color-text: #e8e8e8;
+            --color-text-light: #b0b0b0;
+            --color-gray-100: #1e2a3a;
+            --color-gray-200: #2a3a4a;
+            --color-gray-300: #3a4a5a;
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+        [data-theme="dark"] .navbar {
+            background-color: rgba(22, 33, 62, 0.95) !important;
+        }
+        [data-theme="dark"] .footer {
+            background-color: #0f1a2e !important;
+        }
+        [data-theme="dark"] .bg-secondary-custom {
+            background-color: #1a1a2e !important;
+        }
+        [data-theme="dark"] .card,
+        [data-theme="dark"] .recipe-card,
+        [data-theme="dark"] .blog-card {
+            background-color: #1e2a3a !important;
+            border-color: #2a3a4a !important;
+        }
+        [data-theme="dark"] .form-control {
+            background-color: #1e2a3a !important;
+            border-color: #2a3a4a !important;
+            color: #e8e8e8 !important;
+        }
+        [data-theme="dark"] .form-control:focus {
+            background-color: #1e2a3a !important;
+            border-color: var(--color-primary) !important;
+            color: #e8e8e8 !important;
+        }
+        [data-theme="dark"] .accordion-item {
+            background-color: #1e2a3a !important;
+            border-color: #2a3a4a !important;
+        }
+        [data-theme="dark"] .accordion-button {
+            background-color: #1e2a3a !important;
+            color: #e8e8e8 !important;
+        }
+        [data-theme="dark"] .accordion-button:not(.collapsed) {
+            background-color: #2a3a4a !important;
+            color: var(--color-primary) !important;
+        }
+        [data-theme="dark"] .hero-section {
+            background: linear-gradient(135deg, #0f1a2e 0%, #1a2a3e 100%) !important;
+        }
+
+        /* ===== Reset & Base ===== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-white);
+            line-height: 1.7;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            color: var(--color-text);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        a {
+            text-decoration: none;
+            color: var(--color-primary);
+            transition: var(--transition);
+        }
+        a:hover {
+            color: var(--color-primary-dark);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .section-padding {
+            padding: 80px 0;
+        }
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+        }
+        .section-subtitle {
+            color: var(--color-text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+        .bg-secondary-custom {
+            background-color: var(--color-secondary);
+            transition: background-color 0.3s;
+        }
+        .text-primary-custom {
+            color: var(--color-primary);
+        }
+        .btn-primary-custom {
+            background-color: var(--color-primary);
+            border: none;
+            padding: 12px 36px;
+            border-radius: var(--radius-btn);
+            font-weight: 600;
+            color: #fff;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-primary-custom:hover {
+            background-color: var(--color-primary-dark);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        .btn-outline-custom {
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+            background: transparent;
+            padding: 12px 36px;
+            border-radius: var(--radius-btn);
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-outline-custom:hover {
+            background-color: var(--color-primary);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .btn-accent {
+            background-color: var(--color-accent);
+            border: none;
+            padding: 10px 28px;
+            border-radius: var(--radius-btn);
+            font-weight: 600;
+            color: #fff;
+            transition: var(--transition);
+        }
+        .btn-accent:hover {
+            background-color: var(--color-accent-light);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* ===== Scroll Animations ===== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== Navbar ===== */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+            padding: 10px 0;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(255, 107, 53, 0.06);
+        }
+        .navbar.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        }
+        [data-theme="dark"] .navbar {
+            background-color: rgba(22, 33, 62, 0.95) !important;
+            border-bottom-color: rgba(255, 107, 53, 0.10);
+        }
+        .navbar-brand {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--color-text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar-brand svg {
+            width: 36px;
+            height: 36px;
+        }
+        .navbar-brand .brand-highlight {
+            color: var(--color-primary);
+        }
+        .nav-link {
+            font-weight: 500;
+            color: var(--color-text) !important;
+            padding: 8px 18px !important;
+            border-radius: 30px;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--color-primary) !important;
+            background-color: rgba(255, 107, 53, 0.08);
+        }
+        .navbar .btn-primary-custom {
+            padding: 8px 24px;
+            font-size: 0.9rem;
+        }
+        .dark-toggle {
+            background: none;
+            border: none;
+            font-size: 1.4rem;
+            color: var(--color-text);
+            cursor: pointer;
+            padding: 4px 10px;
+            border-radius: 50%;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dark-toggle:hover {
+            background-color: rgba(255, 107, 53, 0.10);
+            color: var(--color-primary);
+        }
+        .search-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            color: var(--color-text);
+            cursor: pointer;
+            padding: 4px 10px;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        .search-toggle:hover {
+            background-color: rgba(255, 107, 53, 0.08);
+            color: var(--color-primary);
+        }
+
+        /* ===== Hero ===== */
+        .hero-section {
+            padding: 140px 0 100px;
+            background: linear-gradient(135deg, #FFF8F5 0%, #FEF0EA 100%);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            transition: background 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        [data-theme="dark"] .hero-section {
+            background: linear-gradient(135deg, #0f1a2e 0%, #1a2a3e 100%);
+        }
+        .hero-content h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 1.2rem;
+            letter-spacing: -1px;
+        }
+        .hero-content h1 .highlight {
+            color: var(--color-primary);
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            color: var(--color-text-light);
+            max-width: 520px;
+            margin-bottom: 2rem;
+        }
+        .hero-image-wrapper {
+            position: relative;
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+        .hero-image-wrapper img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            border-radius: var(--radius-card);
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 107, 53, 0.10);
+            color: var(--color-primary);
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .hero-stats .stat {
+            text-align: center;
+        }
+        .hero-stats .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+        }
+        .hero-stats .stat-label {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+        }
+
+        /* ===== Cards ===== */
+        .category-card,
+        .recipe-card,
+        .blog-card,
+        .testimonial-card {
+            background: var(--color-white);
+            border-radius: var(--radius-card);
+            padding: 24px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+        .category-card:hover,
+        .recipe-card:hover,
+        .blog-card:hover,
+        .testimonial-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+        .category-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .category-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: rgba(255, 107, 53, 0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin: 0 auto 1rem;
+            transition: var(--transition);
+        }
+        .category-card:hover .category-icon {
+            background: var(--color-primary);
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .category-card h5 {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .recipe-card img {
+            border-radius: 12px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .recipe-card .recipe-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            margin-bottom: 0.5rem;
+        }
+        .recipe-card .recipe-meta i {
+            margin-right: 4px;
+            color: var(--color-primary);
+        }
+        .recipe-card .recipe-rating {
+            color: #f5b342;
+            font-size: 0.9rem;
+        }
+        .recipe-card .recipe-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 12px;
+            border-radius: 50px;
+            background: rgba(255, 107, 53, 0.10);
+            color: var(--color-primary);
+            margin-right: 4px;
+            margin-bottom: 4px;
+        }
+
+        .blog-card img {
+            border-radius: 12px;
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .blog-card .blog-meta {
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+        }
+
+        .testimonial-card {
+            padding: 32px 28px;
+            position: relative;
+        }
+        .testimonial-card .quote-icon {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            opacity: 0.15;
+            margin-bottom: 0.5rem;
+        }
+        .testimonial-card .stars {
+            color: #f5b342;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* ===== Recipe Details ===== */
+        .recipe-detail-hero {
+            padding: 120px 0 60px;
+            background: var(--color-secondary);
+            transition: background 0.3s;
+        }
+        .recipe-detail-hero img {
+            border-radius: var(--radius-card);
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            box-shadow: var(--shadow-soft);
+        }
+        .recipe-detail-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 40px;
+            padding: 20px 0;
+        }
+        .recipe-detail-meta .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-text-light);
+        }
+        .recipe-detail-meta .meta-item i {
+            color: var(--color-primary);
+            font-size: 1.2rem;
+        }
+        .ingredients-list,
+        .instructions-list {
+            list-style: none;
+            padding: 0;
+        }
+        .ingredients-list li,
+        .instructions-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .ingredients-list li::before {
+            content: "•";
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .instructions-list li::before {
+            content: counter(step);
+            counter-increment: step;
+            background: var(--color-primary);
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .instructions-list {
+            counter-reset: step;
+        }
+        .instructions-list li {
+            padding: 12px 0;
+        }
+
+        /* ===== Pricing / Meal Plans ===== */
+        .plan-card {
+            background: var(--color-white);
+            border-radius: var(--radius-card);
+            padding: 40px 28px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            height: 100%;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+        .plan-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+        .plan-card.popular {
+            border: 2px solid var(--color-primary);
+        }
+        .plan-card .price {
+            font-size: 2.8rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+        }
+        .plan-card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--color-text-light);
+        }
+        .plan-badge {
+            display: inline-block;
+            background: var(--color-primary);
+            color: #fff;
+            padding: 4px 18px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* ===== FAQ ===== */
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(255, 107, 53, 0.06);
+            color: var(--color-primary);
+            box-shadow: none;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(255, 107, 53, 0.20);
+        }
+        .accordion-item {
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            margin-bottom: 12px;
+            border-radius: 12px !important;
+            overflow: hidden;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background-color: var(--color-secondary);
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            transition: background 0.3s;
+        }
+        [data-theme="dark"] .footer {
+            background-color: #0f1a2e !important;
+            border-top-color: rgba(255, 255, 255, 0.04);
+        }
+        .footer h5 {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+        }
+        .footer a {
+            color: var(--color-text-light);
+            display: inline-block;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+        .footer a:hover {
+            color: var(--color-primary);
+        }
+        .footer .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 107, 53, 0.08);
+            color: var(--color-text);
+            transition: var(--transition);
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+        .footer .social-link:hover {
+            background: var(--color-primary);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* ===== Back to Top ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            color: #fff;
+            border: none;
+            font-size: 1.3rem;
+            box-shadow: var(--shadow-hover);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            background: var(--color-primary-dark);
+            color: #fff;
+            transform: translateY(-4px);
+        }
+
+        /* ===== Sticky CTA ===== */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            padding: 14px 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            z-index: 998;
+            display: none;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.04);
+        }
+        [data-theme="dark"] .sticky-cta {
+            background: rgba(22, 33, 62, 0.96);
+            border-top-color: rgba(255, 255, 255, 0.04);
+        }
+        .sticky-cta.show {
+            display: block;
+        }
+        .sticky-cta .btn-primary-custom {
+            padding: 10px 28px;
+            font-size: 0.95rem;
+        }
+
+        /* ===== Newsletter Popup ===== */
+        .newsletter-popup {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            max-width: 360px;
+            background: var(--color-white);
+            border-radius: var(--radius-card);
+            padding: 32px 28px;
+            box-shadow: var(--shadow-hover);
+            z-index: 997;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            display: none;
+            animation: slideUp 0.5s ease;
+        }
+        .newsletter-popup.show {
+            display: block;
+        }
+        .newsletter-popup .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            color: var(--color-text-light);
+            cursor: pointer;
+        }
+        .newsletter-popup h5 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+        }
+        .newsletter-popup .form-control {
+            border-radius: 50px;
+            padding: 10px 18px;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .newsletter-popup .btn-primary-custom {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            width: 100%;
+            justify-content: center;
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 576px) {
+            .newsletter-popup {
+                right: 16px;
+                left: 16px;
+                max-width: none;
+                bottom: 90px;
+            }
+        }
+
+        /* ===== Search Overlay ===== */
+        .search-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1050;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .search-overlay.show {
+            display: flex;
+        }
+        .search-overlay .search-box {
+            max-width: 600px;
+            width: 100%;
+            background: var(--color-white);
+            border-radius: var(--radius-card);
+            padding: 30px;
+            box-shadow: var(--shadow-hover);
+        }
+        .search-overlay .search-box input {
+            border: none;
+            border-bottom: 2px solid var(--color-gray-300);
+            padding: 15px 0;
+            font-size: 1.2rem;
+            width: 100%;
+            outline: none;
+            background: transparent;
+            color: var(--color-text);
+        }
+        .search-overlay .search-box input:focus {
+            border-bottom-color: var(--color-primary);
+        }
+        .search-overlay .search-close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            background: none;
+            border: none;
+            font-size: 2.5rem;
+            color: #fff;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+        .search-overlay .search-close:hover {
+            opacity: 1;
+        }
+
+        /* ===== Map ===== */
+        .map-container {
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            height: 300px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 992px) {
+            .hero-section {
+                padding: 120px 0 60px;
+                min-height: auto;
+            }
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            .hero-image-wrapper img {
+                height: 320px;
+            }
+            .section-title {
+                font-size: 2.2rem;
+            }
+            .recipe-detail-hero img {
+                height: 280px;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 100px 0 40px;
+                text-align: center;
+            }
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 1rem;
+            }
+            .hero-image-wrapper img {
+                height: 220px;
+            }
+            .hero-stats {
+                justify-content: center;
+                gap: 1.5rem;
+            }
+            .hero-stats .stat-number {
+                font-size: 1.6rem;
+            }
+            .section-padding {
+                padding: 50px 0;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 44px;
+                height: 44px;
+                font-size: 1.1rem;
+            }
+            .sticky-cta .btn-primary-custom {
+                padding: 8px 18px;
+                font-size: 0.85rem;
+            }
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+            .navbar-brand svg {
+                width: 30px;
+                height: 30px;
+            }
+            .recipe-detail-hero {
+                padding: 100px 0 40px;
+            }
+            .recipe-detail-hero img {
+                height: 200px;
+            }
+            .recipe-detail-meta {
+                gap: 12px 20px;
+            }
+        }
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            .hero-image-wrapper img {
+                height: 180px;
+            }
+            .category-card,
+            .recipe-card,
+            .blog-card {
+                padding: 16px;
+            }
+            .footer {
+                padding: 40px 0 20px;
+            }
+            .search-overlay .search-box {
+                padding: 20px;
+            }
+            .search-overlay .search-close {
+                top: 20px;
+                right: 20px;
+                font-size: 2rem;
+            }
+        }
+
+        /* ===== Print Styles ===== */
+        @media print {
+            .navbar,
+            .footer,
+            .sticky-cta,
+            .back-to-top,
+            .newsletter-popup,
+            .search-overlay {
+                display: none !important;
+            }
+            .recipe-detail-hero {
+                padding: 20px 0;
+            }
+            .recipe-detail-hero img {
+                height: 200px;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        /* ===== Cooking Timer ===== */
+        .timer-display {
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 107, 53, 0.06);
+            border-radius: var(--radius-card);
+        }
+        .timer-controls button {
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#home" aria-label="Flavor Haven Home">
+                <!-- SVG Logo -->
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="50" cy="50" r="45" fill="#FF6B35"/>
+                    <path d="M35 30 L50 20 L65 30 L65 50 L50 60 L35 50 Z" fill="#FFFFFF" opacity="0.9"/>
+                    <path d="M30 40 L70 40 L70 45 L30 45 Z" fill="#FFFFFF" opacity="0.7"/>
+                    <circle cx="50" cy="50" r="8" fill="#FFFFFF" opacity="0.6"/>
+                </svg>
+                Flavor <span class="brand-highlight">Haven</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#meal-plans">Meal Plans</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <button class="search-toggle" id="searchToggle" aria-label="Search recipes">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+                        <i class="bi bi-moon-fill" id="darkIcon"></i>
+                    </button>
+                </li>
+                <li class="nav-item ms-lg-2">
+                    <a href="#newsletter" class="btn btn-primary-custom btn-sm">Subscribe</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== SEARCH OVERLAY ===== -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search recipes">
+    <button class="search-close" id="searchClose" aria-label="Close search">&times;</button>
+    <div class="search-box">
+        <h4 class="mb-3">Search Recipes</h4>
+        <input type="text" id="searchInput" placeholder="Search by name, ingredient, or cuisine..." aria-label="Search query" />
+        <div class="mt-3 d-flex flex-wrap gap-2" id="searchSuggestions">
+            <span class="badge bg-light text-dark p-2">Chicken</span>
+            <span class="badge bg-light text-dark p-2">Pasta</span>
+            <span class="badge bg-light text-dark p-2">Vegan</span>
+            <span class="badge bg-light text-dark p-2">Quick</span>
+            <span class="badge bg-light text-dark p-2">Healthy</span>
+        </div>
+        <div class="mt-3" id="searchResults"></div>
+    </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero-section" aria-labelledby="hero-headline">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 hero-content fade-up">
+                <span class="hero-badge"><i class="bi bi-star-fill me-1"></i> Top Recipes 2026</span>
+                <h1 id="hero-headline">Discover Delicious Recipes <br /><span class="highlight">for Every Occasion</span></h1>
+                <p>Simple recipes, expert cooking tips, and fresh meal ideas for home cooks of every skill level.</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#recipes" class="btn btn-primary-custom"><i class="bi bi-grid-fill me-1"></i>Browse Recipes</a>
+                    <a href="#featured" class="btn btn-outline-custom"><i class="bi bi-play-circle me-1"></i>Start Cooking</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Recipes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Home Cooks</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">Avg. Rating</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 fade-up">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop&crop=center"
+                    alt="Delicious spread of fresh food and cooking ingredients"
+                    loading="eager"
+                    width="800"
+                    height="600" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CATEGORIES ===== -->
+<section id="categories" class="section-padding bg-secondary-custom" aria-labelledby="categories-title">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="hero-badge"><i class="bi bi-grid-3x3-gap-fill me-1"></i> Categories</span>
+            <h2 id="categories-title" class="section-title">Explore by Category</h2>
+            <p class="section-subtitle">Find the perfect recipe for any meal, mood, or dietary preference.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-sunrise-fill"></i></div>
+                    <h5>Breakfast</h5>
+                    <span class="text-muted small">42 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-sun-fill"></i></div>
+                    <h5>Lunch</h5>
+                    <span class="text-muted small">38 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-moon-fill"></i></div>
+                    <h5>Dinner</h5>
+                    <span class="text-muted small">56 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-cake-fill"></i></div>
+                    <h5>Desserts</h5>
+                    <span class="text-muted small">34 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-heart-fill"></i></div>
+                    <h5>Healthy</h5>
+                    <span class="text-muted small">48 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-clock-fill"></i></div>
+                    <h5>Quick Meals</h5>
+                    <span class="text-muted small">29 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-leaf-fill"></i></div>
+                    <h5>Vegetarian</h5>
+                    <span class="text-muted small">40 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-tree-fill"></i></div>
+                    <h5>Vegan</h5>
+                    <span class="text-muted small">27 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-emoji-smile-fill"></i></div>
+                    <h5>Kids Meals</h5>
+                    <span class="text-muted small">22 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-cup-straw"></i></div>
+                    <h5>Drinks</h5>
+                    <span class="text-muted small">18 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-globe-americas"></i></div>
+                    <h5>International</h5>
+                    <span class="text-muted small">35 recipes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 fade-up">
+                <a href="#recipes" class="category-card d-block">
+                    <div class="category-icon"><i class="bi bi-basket-fill"></i></div>
+                    <h5>Snacks</h5>
+                    <span class="text-muted small">31 recipes</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== POPULAR RECIPES ===== -->
+<section id="recipes" class="section-padding" aria-labelledby="recipes-title">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="hero-badge"><i class="bi bi-star-fill me-1"></i> Popular Recipes</span>
+            <h2 id="recipes-title" class="section-title">Most Loved Recipes</h2>
+            <p class="section-subtitle">Handpicked favorites from our community of home cooks.</p>
+        </div>
+        <!-- Filters -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 fade-up" role="group" aria-label="Filter recipes">
+            <button class="btn btn-outline-custom btn-sm active-filter" data-filter="all">All</button>
+            <button class="btn btn-outline-custom btn-sm" data-filter="breakfast">Breakfast</button>
+            <button class="btn btn-outline-custom btn-sm" data-filter="lunch">Lunch</button>
+            <button class="btn btn-outline-custom btn-sm" data-filter="dinner">Dinner</button>
+            <button class="btn btn-outline-custom btn-sm" data-filter="dessert">Dessert</button>
+            <button class="btn btn-outline-custom btn-sm" data-filter="healthy">Healthy</button>
+            <button class="btn btn-outline-custom btn-sm" data-filter="quick">Quick</button>
+        </div>
+        <div class="row g-4" id="recipeGrid">
+            <!-- Recipe 1 -->
+            <div class="col-md-6 col-lg-4 recipe-item" data-category="dinner" data-diet="vegetarian">
+                <div class="recipe-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&h=400&fit=crop&crop=center"
+                    alt="Creamy garlic pasta with fresh herbs" loading="lazy" width="600" height="400" />
+                    <div class="d-flex flex-wrap gap-1 mb-2">
+                        <span class="recipe-tag">Dinner</span>
+                        <span class="recipe-tag">Vegetarian</span>
+                    </div>
+                    <h5>Creamy Garlic Pasta</h5>
+                    <div class="recipe-meta">
+                        <span><i class="bi bi-clock"></i> 25 min</span>
+                        <span><i class="bi bi-thermometer"></i> Easy</span>
+                        <span><i class="bi bi-fire"></i> 420 kcal</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> (142)
+                    </div>
+                    <a href="#recipe-detail-1" class="btn btn-primary-custom btn-sm mt-3 w-100">View Recipe</a>
+                </div>
+            </div>
+            <!-- Recipe 2 -->
+            <div class="col-md-6 col-lg-4 recipe-item" data-category="breakfast" data-diet="vegetarian">
+                <div class="recipe-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&h=400&fit=crop&crop=center"
+                    alt="Fluffy pancakes with berries and syrup" loading="lazy" width="600" height="400" />
+                    <div class="d-flex flex-wrap gap-1 mb-2">
+                        <span class="recipe-tag">Breakfast</span>
+                        <span class="recipe-tag">Quick</span>
+                    </div>
+                    <h5>Fluffy Berry Pancakes</h5>
+                    <div class="recipe-meta">
+                        <span><i class="bi bi-clock"></i> 20 min</span>
+                        <span><i class="bi bi-thermometer"></i> Easy</span>
+                        <span><i class="bi bi-fire"></i> 310 kcal</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> (98)
+                    </div>
+                    <a href="#recipe-detail-2" class="btn btn-primary-custom btn-sm mt-3 w-100">View Recipe</a>
+                </div>
+            </div>
+            <!-- Recipe 3 -->
+            <div class="col-md-6 col-lg-4 recipe-item" data-category="dinner" data-diet="vegan">
+                <div class="recipe-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop&crop=center"
+                    alt="Fresh vegetable salad bowl" loading="lazy" width="600" height="400" />
+                    <div class="d-flex flex-wrap gap-1 mb-2">
+                        <span class="recipe-tag">Dinner</span>
+                        <span class="recipe-tag">Vegan</span>
+                        <span class="recipe-tag">Healthy</span>
+                    </div>
+                    <h5>Mediterranean Bowl</h5>
+                    <div class="recipe-meta">
+                        <span><i class="bi bi-clock"></i> 15 min</span>
+                        <span><i class="bi bi-thermometer"></i> Easy</span>
+                        <span><i class="bi bi-fire"></i> 380 kcal</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (87)
+                    </div>
+                    <a href="#recipe-detail-3" class="btn btn-primary-custom btn-sm mt-3 w-100">View Recipe</a>
+                </div>
+            </div>
+            <!-- Recipe 4 -->
+            <div class="col-md-6 col-lg-4 recipe-item" data-category="dessert" data-diet="vegetarian">
+                <div class="recipe-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&h=400&fit=crop&crop=center"
+                    alt="Chocolate cake with berries" loading="lazy" width="600" height="400" />
+                    <div class="d-flex flex-wrap gap-1 mb-2">
+                        <span class="recipe-tag">Dessert</span>
+                        <span class="recipe-tag">Baking</span>
+                    </div>
+                    <h5>Decadent Chocolate Cake</h5>
+                    <div class="recipe-meta">
+                        <span><i class="bi bi-clock"></i> 60 min</span>
+                        <span><i class="bi bi-thermometer"></i> Medium</span>
+                        <span><i class="bi bi-fire"></i> 550 kcal</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> (203)
+                    </div>
+                    <a href="#recipe-detail-4" class="btn btn-primary-custom btn-sm mt-3 w-100">View Recipe</a>
+                </div>
+            </div>
+            <!-- Recipe 5 -->
+            <div class="col-md-6 col-lg-4 recipe-item" data-category="lunch" data-diet="vegetarian">
+                <div class="recipe-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop&crop=center"
+                    alt="Healthy grain bowl with vegetables" loading="lazy" width="600" height="400" />
+                    <div class="d-flex flex-wrap gap-1 mb-2">
+                        <span class="recipe-tag">Lunch</span>
+                        <span class="recipe-tag">Healthy</span>
+                    </div>
+                    <h5>Quinoa Power Bowl</h5>
+                    <div class="recipe-meta">
+                        <span><i class="bi bi-clock"></i> 20 min</span>
+                        <span><i class="bi bi-thermometer"></i> Easy</span>
+                        <span><i class="bi bi-fire"></i> 410 kcal</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (64)
+                    </div>
+                    <a href="#recipe-detail-5" class="btn btn-primary-custom btn-sm mt-3 w-100">View Recipe</a>
+                </div>
+            </div>
+            <!-- Recipe 6 -->
+            <div class="col-md-6 col-lg-4 recipe-item" data-category="dinner" data-diet="vegan">
+                <div class="recipe-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop&crop=center&sat=-10"
+                    alt="Vegan lentil soup" loading="lazy" width="600" height="400" />
+                    <div class="d-flex flex-wrap gap-1 mb-2">
+                        <span class="recipe-tag">Dinner</span>
+                        <span class="recipe-tag">Vegan</span>
+                    </div>
+                    <h5>Hearty Lentil Soup</h5>
+                    <div class="recipe-meta">
+                        <span><i class="bi bi-clock"></i> 35 min</span>
+                        <span><i class="bi bi-thermometer"></i> Easy</span>
+                        <span><i class="bi bi-fire"></i> 280 kcal</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> (112)
+                    </div>
+                    <a href="#recipe-detail-6" class="btn btn-primary-custom btn-sm mt-3 w-100">View Recipe</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4 fade-up">
+            <a href="#recipes" class="btn btn-outline-custom">Load More Recipes <i class="bi bi-arrow-down"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== RECIPE DETAIL (Hidden by default, shown via JS) ===== -->
+<!-- Recipe Detail 1 -->
+<div id="recipe-detail-1" class="recipe-detail-page" style="display:none;">
+    <section class="recipe-detail-hero bg-secondary-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&h=500&fit=crop&crop=center"
+                    alt="Creamy garlic pasta" loading="lazy" width="800" height="500" />
+                </div>
+                <div class="col-lg-5">
+                    <span class="recipe-tag">Dinner</span>
+                    <span class="recipe-tag">Vegetarian</span>
+                    <h1 class="mt-2">Creamy Garlic Pasta</h1>
+                    <p class="text-muted">Rich, creamy, and packed with garlic flavor — this pasta is a weeknight favorite.</p>
+                    <div class="recipe-detail-meta">
+                        <span class="meta-item"><i class="bi bi-clock"></i> Prep: 10 min</span>
+                        <span class="meta-item"><i class="bi bi-clock"></i> Cook: 15 min</span>
+                        <span class="meta-item"><i class="bi bi-people"></i> Serves 4</span>
+                        <span class="meta-item"><i class="bi bi-fire"></i> 420 kcal</span>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-3 no-print">
+                        <button class="btn btn-primary-custom btn-sm" onclick="window.print()"><i class="bi bi-printer"></i> Print</button>
+                        <button class="btn btn-outline-custom btn-sm"><i class="bi bi-share"></i> Share</button>
+                        <button class="btn btn-outline-custom btn-sm" onclick="startTimer(15)"><i class="bi bi-stopwatch"></i> Timer</button>
+                    </div>
+                    <div class="mt-3 no-print">
+                        <div class="timer-display" id="timerDisplay1" style="font-size:1.5rem; padding:10px; display:none;">15:00</div>
+                        <div class="timer-controls" id="timerControls1" style="display:none;">
+                            <button class="btn btn-primary-custom btn-sm" onclick="pauseTimer()">Pause</button>
+                            <button class="btn btn-outline-custom btn-sm" onclick="resetTimer()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3>Ingredients</h3>
+                    <ul class="ingredients-list">
+                        <li>400g pasta (your choice)</li>
+                        <li>4 cloves garlic, minced</li>
+                        <li>1 cup heavy cream</li>
+                        <li>1/2 cup Parmesan cheese, grated</li>
+                        <li>2 tbsp olive oil</li>
+                        <li>Salt and pepper to taste</li>
+                        <li>Fresh parsley for garnish</li>
+                    </ul>
+                    <h3 class="mt-4">Nutrition (per serving)</h3>
+                    <div class="d-flex flex-wrap gap-3">
+                        <span class="badge bg-light text-dark p-2">Calories: 420</span>
+                        <span class="badge bg-light text-dark p-2">Protein: 14g</span>
+                        <span class="badge bg-light text-dark p-2">Carbs: 52g</span>
+                        <span class="badge bg-light text-dark p-2">Fat: 18g</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Instructions</h3>
+                    <ol class="instructions-list">
+                        <li>Cook pasta according to package instructions. Drain and set aside.</li>
+                        <li>In a large pan, heat olive oil over medium heat. Add minced garlic and sauté until fragrant.</li>
+                        <li>Pour in heavy cream and bring to a simmer. Cook for 3-4 minutes until slightly thickened.</li>
+                        <li>Stir in Parmesan cheese until melted and smooth. Season with salt and pepper.</li>
+                        <li>Add cooked pasta to the sauce and toss to coat evenly.</li>
+                        <li>Garnish with fresh parsley and serve immediately.</li>
+                    </ol>
+                    <h4 class="mt-4">💡 Cooking Tips</h4>
+                    <p class="text-muted">Reserve some pasta water to adjust sauce consistency. For extra flavor, add a pinch of red pepper flakes.</p>
+                    <h4 class="mt-3">🧊 Storage Tips</h4>
+                    <p class="text-muted">Store in an airtight container in the fridge for up to 3 days. Reheat with a splash of milk.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4 no-print">
+                <a href="#recipes" class="btn btn-outline-custom"><i class="bi bi-arrow-left"></i> Back to Recipes</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Recipe Detail 2 -->
+<div id="recipe-detail-2" class="recipe-detail-page" style="display:none;">
+    <section class="recipe-detail-hero bg-secondary-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&h=500&fit=crop&crop=center"
+                    alt="Fluffy pancakes" loading="lazy" width="800" height="500" />
+                </div>
+                <div class="col-lg-5">
+                    <span class="recipe-tag">Breakfast</span>
+                    <span class="recipe-tag">Quick</span>
+                    <h1 class="mt-2">Fluffy Berry Pancakes</h1>
+                    <p class="text-muted">Light, airy pancakes bursting with berries — the perfect start to your day.</p>
+                    <div class="recipe-detail-meta">
+                        <span class="meta-item"><i class="bi bi-clock"></i> Prep: 10 min</span>
+                        <span class="meta-item"><i class="bi bi-clock"></i> Cook: 10 min</span>
+                        <span class="meta-item"><i class="bi bi-people"></i> Serves 4</span>
+                        <span class="meta-item"><i class="bi bi-fire"></i> 310 kcal</span>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-3 no-print">
+                        <button class="btn btn-primary-custom btn-sm" onclick="window.print()"><i class="bi bi-printer"></i> Print</button>
+                        <button class="btn btn-outline-custom btn-sm"><i class="bi bi-share"></i> Share</button>
+                        <button class="btn btn-outline-custom btn-sm" onclick="startTimer(10)"><i class="bi bi-stopwatch"></i> Timer</button>
+                    </div>
+                    <div class="mt-3 no-print">
+                        <div class="timer-display" id="timerDisplay2" style="font-size:1.5rem; padding:10px; display:none;">10:00</div>
+                        <div class="timer-controls" id="timerControls2" style="display:none;">
+                            <button class="btn btn-primary-custom btn-sm" onclick="pauseTimer()">Pause</button>
+                            <button class="btn btn-outline-custom btn-sm" onclick="resetTimer()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3>Ingredients</h3>
+                    <ul class="ingredients-list">
+                        <li>1 1/2 cups all-purpose flour</li>
+                        <li>2 tbsp sugar</li>
+                        <li>2 tsp baking powder</li>
+                        <li>1/2 tsp salt</li>
+                        <li>1 cup milk</li>
+                        <li>1 egg</li>
+                        <li>2 tbsp melted butter</li>
+                        <li>1 cup mixed berries</li>
+                    </ul>
+                    <h3 class="mt-4">Nutrition (per serving)</h3>
+                    <div class="d-flex flex-wrap gap-3">
+                        <span class="badge bg-light text-dark p-2">Calories: 310</span>
+                        <span class="badge bg-light text-dark p-2">Protein: 10g</span>
+                        <span class="badge bg-light text-dark p-2">Carbs: 45g</span>
+                        <span class="badge bg-light text-dark p-2">Fat: 10g</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Instructions</h3>
+                    <ol class="instructions-list">
+                        <li>In a large bowl, whisk together flour, sugar, baking powder, and salt.</li>
+                        <li>In another bowl, whisk milk, egg, and melted butter.</li>
+                        <li>Pour wet ingredients into dry ingredients and stir until just combined. Fold in berries.</li>
+                        <li>Heat a griddle or pan over medium heat. Pour 1/4 cup batter for each pancake.</li>
+                        <li>Cook until bubbles form on top, then flip and cook until golden brown.</li>
+                        <li>Serve warm with syrup and extra berries.</li>
+                    </ol>
+                    <h4 class="mt-4">💡 Cooking Tips</h4>
+                    <p class="text-muted">Don't overmix the batter — lumps are fine for fluffy pancakes. Use fresh or frozen berries.</p>
+                    <h4 class="mt-3">🧊 Storage Tips</h4>
+                    <p class="text-muted">Freeze cooked pancakes in a single layer, then transfer to a bag. Reheat in a toaster.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4 no-print">
+                <a href="#recipes" class="btn btn-outline-custom"><i class="bi bi-arrow-left"></i> Back to Recipes</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ===== MEAL PLANS ===== -->
+<section id="meal-plans" class="section-padding bg-secondary-custom" aria-labelledby="mealplans-title">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="hero-badge"><i class="bi bi-calendar-fill me-1"></i> Meal Plans</span>
+            <h2 id="mealplans-title" class="section-title">Weekly Meal Plans</h2>
+            <p class="section-subtitle">Take the guesswork out of cooking with our curated weekly meal plans.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 fade-up">
+                <div class="plan-card">
+                    <span class="plan-badge">Popular</span>
+                    <h5>Family Favorites</h5>
+                    <div class="price">$12 <span>/wk</span></div>
+                    <p class="text-muted small">7 days of family-friendly dinners</p>
+                    <hr />
+                    <ul class="list-unstyled text-start small">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>7 dinner recipes</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Grocery list included</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Prep tips & variations</li>
+                        <li class="mb-2 text-muted"><i class="bi bi-x-circle-fill me-2"></i>No breakfast or lunch</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary-custom w-100">Get Plan</a>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="plan-card popular">
+                    <span class="plan-badge">Best Value</span>
+                    <h5>Healthy Week</h5>
+                    <div class="price">$19 <span>/wk</span></div>
+                    <p class="text-muted small">Nutritious meals for the whole week</p>
+                    <hr />
+                    <ul class="list-unstyled text-start small">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>21 meals (breakfast, lunch, dinner)</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Snacks & smoothies</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Nutritional breakdown</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Vegetarian & vegan options</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary-custom w-100">Get Plan</a>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="plan-card">
+                    <span class="plan-badge">Premium</span>
+                    <h5>Quick & Easy</h5>
+                    <div class="price">$15 <span>/wk</span></div>
+                    <p class="text-muted small">30-minute meals for busy weeknights</p>
+                    <hr />
+                    <ul class="list-unstyled text-start small">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>5 quick dinners</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>5 lunch ideas</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Time-saving hacks</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Pantry staples list</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary-custom w-100">Get Plan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section id="blog" class="section-padding" aria-labelledby="blog-title">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="hero-badge"><i class="bi bi-pencil-fill me-1"></i> Blog</span>
+            <h2 id="blog-title" class="section-title">Latest from the Blog</h2>
+            <p class="section-subtitle">Cooking tips, kitchen hacks, and food stories to inspire your culinary journey.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 fade-up">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop&crop=center"
+                    alt="Easy weeknight dinner spread" loading="lazy" width="600" height="400" />
+                    <span class="recipe-tag">Cooking Tips</span>
+                    <h5 class="mt-2">Easy Weeknight Dinner Ideas</h5>
+                    <p class="text-muted small">Quick and delicious dinners that come together in 30 minutes or less.</p>
+                    <div class="blog-meta"><i class="bi bi-clock"></i> 5 min read</div>
+                    <a href="#" class="text-primary-custom fw-semibold small">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&h=400&fit=crop&crop=center"
+                    alt="Healthy breakfast bowl" loading="lazy" width="600" height="400" />
+                    <span class="recipe-tag">Healthy Living</span>
+                    <h5 class="mt-2">Healthy Breakfast Recipes</h5>
+                    <p class="text-muted small">Start your morning right with these nutritious and delicious breakfast ideas.</p>
+                    <div class="blog-meta"><i class="bi bi-clock"></i> 4 min read</div>
+                    <a href="#" class="text-primary-custom fw-semibold small">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&h=400&fit=crop&crop=center"
+                    alt="Organized kitchen pantry" loading="lazy" width="600" height="400" />
+                    <span class="recipe-tag">Kitchen Hacks</span>
+                    <h5 class="mt-2">Kitchen Organization Tips</h5>
+                    <p class="text-muted small">Transform your kitchen into a functional and beautiful cooking space.</p>
+                    <div class="blog-meta"><i class="bi bi-clock"></i> 6 min read</div>
+                    <a href="#" class="text-primary-custom fw-semibold small">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section-padding bg-secondary-custom" aria-labelledby="about-title">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 fade-up">
+                <span class="hero-badge"><i class="bi bi-heart-fill me-1"></i> About Us</span>
+                <h2 id="about-title" class="section-title">Cooking Inspiration <br />for Every Home</h2>
+                <p class="text-muted">At Flavor Haven, we believe that cooking should be joyful, creative, and accessible to everyone. Our mission is to inspire home cooks with simple, delicious recipes that bring families together.</p>
+                <div class="row g-3 mt-3">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="bi bi-check-circle-fill text-primary-custom mt-1"></i>
+                            <div><strong>Fresh Ingredients</strong><br /><span class="text-muted small">Seasonal and wholesome</span></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="bi bi-check-circle-fill text-primary-custom mt-1"></i>
+                            <div><strong>Easy Cooking</strong><br /><span class="text-muted small">Simple steps for everyone</span></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="bi bi-check-circle-fill text-primary-custom mt-1"></i>
+                            <div><strong>Family Meals</strong><br /><span class="text-muted small">Recipes everyone will love</span></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="bi bi-check-circle-fill text-primary-custom mt-1"></i>
+                            <div><strong>Recipe Testing</strong><br /><span class="text-muted small">Every recipe is tested</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 fade-up">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&h=600&fit=crop&crop=center"
+                    alt="Chef cooking in a modern kitchen" loading="lazy" width="800" height="600" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials" class="section-padding" aria-labelledby="testimonials-title">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="hero-badge"><i class="bi bi-chat-quote-fill me-1"></i> Testimonials</span>
+            <h2 id="testimonials-title" class="section-title">What Home Cooks Say</h2>
+            <p class="section-subtitle">Real feedback from our community of food lovers.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 fade-up">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                    <p class="small">"Flavor Haven has completely changed the way I cook. The recipes are easy to follow and always turn out delicious."</p>
+                    <div class="d-flex align-items-center gap-3 mt-3">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face&facepad=3" alt="Sarah M." class="testimonial-avatar" loading="lazy" />
+                        <div><strong>Sarah M.</strong><br /><span class="text-muted small">Home Cook</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                    <p class="small">"I love the variety of recipes and the meal plans make grocery shopping so much easier. Highly recommend!"</p>
+                    <div class="d-flex align-items-center gap-3 mt-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face&facepad=3" alt="David K." class="testimonial-avatar" loading="lazy" />
+                        <div><strong>David K.</strong><br /><span class="text-muted small">Meal Plan Subscriber</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                    <p class="small">"As a beginner cook, I appreciate how clear and detailed the instructions are. Every recipe feels achievable."</p>
+                    <div class="d-flex align-items-center gap-3 mt-3">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face&facepad=3" alt="Emily R." class="testimonial-avatar" loading="lazy" />
+                        <div><strong>Emily R.</strong><br /><span class="text-muted small">Beginner Cook</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="section-padding bg-secondary-custom" aria-labelledby="faq-title">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="hero-badge"><i class="bi bi-question-circle-fill me-1"></i> FAQ</span>
+            <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to the most common questions about our recipes and community.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1" aria-expanded="true" aria-controls="collapseFaq1">
+                                How do I print a recipe?
+                            </button>
+                        </h3>
+                        <div id="collapseFaq1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Click the "Print" button on any recipe detail page. This will open a print-friendly version of the recipe. You can also use your browser's print function (Ctrl+P / Cmd+P).</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+                                Can beginners cook these recipes?
+                            </button>
+                        </h3>
+                        <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Absolutely! All our recipes are tested and written with clear, step-by-step instructions. We also include difficulty levels and cooking tips to help beginners succeed.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
+                                Are the recipes free?
+                            </button>
+                        </h3>
+                        <div id="collapseFaq3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Yes! All recipes on Flavor Haven are completely free to access. We also offer premium meal plans and recipe books for those who want extra convenience and variety.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq4" aria-expanded="false" aria-controls="collapseFaq4">
+                                Can I submit my own recipes?
+                            </button>
+                        </h3>
+                        <div id="collapseFaq4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">We love community contributions! Please use our contact form to submit your recipe. Our team will review it and may feature it on the website with credit to you.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq5" aria-expanded="false" aria-controls="collapseFaq5">
+                                How often are recipes updated?
+                            </button>
+                        </h3>
+                        <div id="collapseFaq5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">We add new recipes every week! Subscribe to our newsletter to get weekly updates and be the first to try our latest creations.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-padding" aria-labelledby="contact-title">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="hero-badge"><i class="bi bi-envelope-fill me-1"></i> Contact</span>
+            <h2 id="contact-title" class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have a question, suggestion, or recipe idea? We'd love to hear from you.</p>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-6 fade-up">
+                <form id="contactForm" novalidate>
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label fw-semibold">Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="contactName" placeholder="Your name" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="you@example.com" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactPhone" class="form-label fw-semibold">Phone</label>
+                        <input type="tel" class="form-control" id="contactPhone" placeholder="Your phone number" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="contactMessage" rows="4" placeholder="Tell us about your cooking journey..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary-custom"><i class="bi bi-send me-1"></i>Send Message</button>
+                </form>
+            </div>
+            <div class="col-lg-6 fade-up">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46830151.11795828!2d-119.8093025!3d44.24236485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1784487925460!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="mt-4">
+                <p><i class="bi bi-geo-alt text-primary-custom me-2"></i>united state</p>
+                <p><i class="bi bi-telephone text-primary-custom me-2"></i>+1 888 511 8564</p>
+                <p><i class="bi bi-envelope text-primary-custom me-2"></i>hello@flavorhaven.com</p>
+                <div class="d-flex gap-2 mt-3">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section id="newsletter" class="section-padding bg-secondary-custom" aria-labelledby="newsletter-title">
+    <div class="container">
+        <div class="row justify-content-center text-center fade-up">
+            <div class="col-lg-6">
+                <span class="hero-badge"><i class="bi bi-envelope-paper-heart me-1"></i> Newsletter</span>
+                <h2 id="newsletter-title" class="section-title">Get Recipes Weekly</h2>
+                <p class="section-subtitle">Subscribe to receive delicious recipes, cooking tips, and meal inspiration every week.</p>
+                <form id="newsletterForm" class="d-flex flex-wrap gap-2 justify-content-center">
+                    <input type="text" class="form-control w-auto" style="min-width:200px; flex:1;" placeholder="Your name" aria-label="Your name" />
+                    <input type="email" class="form-control w-auto" style="min-width:200px; flex:1;" placeholder="Your email" aria-label="Your email" required />
+                    <button type="submit" class="btn btn-primary-custom">Subscribe</button>
+                </form>
+                <p class="text-muted small mt-3">No spam, unsubscribe anytime.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <a class="navbar-brand" href="#home">
+                    <svg viewBox="0 0 100 100" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="50" cy="50" r="45" fill="#FF6B35"/>
+                        <path d="M35 30 L50 20 L65 30 L65 50 L50 60 L35 50 Z" fill="#FFFFFF" opacity="0.9"/>
+                        <path d="M30 40 L70 40 L70 45 L30 45 Z" fill="#FFFFFF" opacity="0.7"/>
+                        <circle cx="50" cy="50" r="8" fill="#FFFFFF" opacity="0.6"/>
+                    </svg>
+                    Flavor <span class="brand-highlight">Haven</span>
+                </a>
+                <p class="text-muted small mt-2">Delicious recipes for every kitchen. Cooking inspiration for home cooks of all levels.</p>
+                <div class="mt-3">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <h5>Quick Links</h5>
+                <a href="#recipes">Recipes</a><br />
+                <a href="#categories">Categories</a><br />
+                <a href="#meal-plans">Meal Plans</a><br />
+                <a href="#blog">Blog</a><br />
+                <a href="#about">About</a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <h5>Support</h5>
+                <a href="#contact">Contact</a><br />
+                <a href="#faq">FAQs</a><br />
+                <a href="privacy-policy.html">Privacy Policy</a><br />
+                <a href="terms-and-conditions.html">Terms &amp; Conditions</a><br />
+                <a href="refund-policy.html">Refund Policy</a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <h5>Legal</h5>
+                <a href="cookie-policy.html">Cookie Policy</a><br />
+                <a href="disclaimer.html">Disclaimer</a><br />
+                <a href="privacy-policy.html">Privacy</a>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <h5>Explore</h5>
+                <a href="#recipes">Popular</a><br />
+                <a href="#categories">Categories</a><br />
+                <a href="#meal-plans">Meal Plans</a><br />
+                <a href="#blog">Articles</a>
+            </div>
+        </div>
+        <hr class="my-4" />
+        <div class="text-center text-muted small">
+            &copy; 2026 Flavor Haven. All rights reserved. &nbsp;|&nbsp; Recipes for educational and informational purposes.
+        </div>
+    </div>
+</footer>
+
+<!-- ===== Back to Top ===== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+</button>
+
+<!-- ===== Sticky CTA ===== -->
+
+    </div>
+</div>
+
+
+
+<!-- ===== Bootstrap JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- ===== Main JavaScript ===== -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // ===== Dark Mode =====
+        const darkToggle = document.getElementById('darkToggle');
+        const darkIcon = document.getElementById('darkIcon');
+        let darkMode = localStorage.getItem('theme') === 'dark';
+
+        function setDarkMode(isDark) {
+            if (isDark) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                darkIcon.className = 'bi bi-sun-fill';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                darkIcon.className = 'bi bi-moon-fill';
+                localStorage.setItem('theme', 'light');
+            }
+            darkMode = isDark;
+        }
+        setDarkMode(darkMode);
+
+        darkToggle.addEventListener('click', function() {
+            setDarkMode(!darkMode);
+        });
+
+        // ===== Navbar scroll effect =====
+        const navbar = document.getElementById('mainNav');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ===== Scroll Animations =====
+        const fadeElements = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -20px 0px' });
+        fadeElements.forEach(el => observer.observe(el));
+
+        // ===== Back to Top =====
+        const backBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) {
+                backBtn.classList.add('show');
+            } else {
+                backBtn.classList.remove('show');
+            }
+        });
+        backBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== Sticky CTA =====
+        const stickyCta = document.getElementById('stickyCta');
+        window.addEventListener('scroll', function() {
+            const heroHeight = document.querySelector('.hero-section').offsetHeight;
+            if (window.scrollY > heroHeight - 100) {
+                stickyCta.classList.add('show');
+            } else {
+                stickyCta.classList.remove('show');
+            }
+        });
+
+        // ===== Search Overlay =====
+        const searchToggle = document.getElementById('searchToggle');
+        const searchOverlay = document.getElementById('searchOverlay');
+        const searchClose = document.getElementById('searchClose');
+        const searchInput = document.getElementById('searchInput');
+
+        searchToggle.addEventListener('click', function() {
+            searchOverlay.classList.add('show');
+            searchInput.focus();
+        });
+        searchClose.addEventListener('click', function() {
+            searchOverlay.classList.remove('show');
+        });
+        searchOverlay.addEventListener('click', function(e) {
+            if (e.target === this) searchOverlay.classList.remove('show');
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') searchOverlay.classList.remove('show');
+        });
+
+        // ===== Live Search =====
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            const recipeCards = document.querySelectorAll('.recipe-item');
+
+            if (query.length < 2) {
+                resultsContainer.innerHTML = '';
+                return;
+            }
+
+            let matches = 0;
+            let html = '<div class="row g-2">';
+            recipeCards.forEach(card => {
+                const title = card.querySelector('h5')?.textContent?.toLowerCase() || '';
+                const tags = card.querySelectorAll('.recipe-tag');
+                let tagText = '';
+                tags.forEach(t => tagText += ' ' + t.textContent.toLowerCase());
+                if (title.includes(query) || tagText.includes(query)) {
+                    matches++;
+                    const img = card.querySelector('img')?.src || '';
+                    const link = card.querySelector('a')?.getAttribute('href') || '#';
+                    html += `
+                            <div class="col-12">
+                                <div class="d-flex align-items-center gap-3 p-2 border-bottom">
+                                    <img src="${img}" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:8px;" />
+                                    <div>
+                                        <strong>${title}</strong>
+                                        <div class="text-muted small">${tagText}</div>
+                                    </div>
+                                    <a href="${link}" class="btn btn-primary-custom btn-sm ms-auto">View</a>
+                                </div>
+                            </div>
+                        `;
+                }
+            });
+            html += '</div>';
+            if (matches === 0) {
+                html = '<p class="text-muted">No recipes found. Try a different search term.</p>';
+            }
+            resultsContainer.innerHTML = html;
+        });
+
+        // ===== Recipe Filters =====
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const recipeItems = document.querySelectorAll('.recipe-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active-filter'));
+                this.classList.add('active-filter');
+                const filter = this.dataset.filter;
+                recipeItems.forEach(item => {
+                    const cat = item.dataset.category || '';
+                    if (filter === 'all' || cat === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // ===== Recipe Detail Toggle =====
+        document.querySelectorAll('.recipe-card a[href^="#recipe-detail"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Hide all detail pages
+                document.querySelectorAll('.recipe-detail-page').forEach(p => p.style.display = 'none');
+                // Show target
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.style.display = 'block';
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ===== Back to Recipes from detail =====
+        document.querySelectorAll('.recipe-detail-page .btn-outline-custom').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.recipe-detail-page').forEach(p => p.style.display = 'none');
+                document.getElementById('recipes').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // ===== Contact Form =====
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('contactName').value.trim();
+            const email = document.getElementById('contactEmail').value.trim();
+            const message = document.getElementById('contactMessage').value.trim();
+
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            alert('Thank you! Your message has been sent. We\'ll get back to you soon.');
+            this.reset();
+        });
+
+        // ===== Newsletter Popup =====
+        const popup = document.getElementById('newsletterPopup');
+        const closePopup = document.getElementById('closePopup');
+        const popupForm = document.getElementById('popupForm');
+
+        if (!sessionStorage.getItem('newsletterShown')) {
+            setTimeout(() => {
+                popup.classList.add('show');
+                sessionStorage.setItem('newsletterShown', 'true');
+            }, 6000);
+        }
+
+        closePopup.addEventListener('click', function() {
+            popup.classList.remove('show');
+        });
+
+        popupForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value.trim();
+            if (email && email.includes('@') && email.includes('.')) {
+                alert('Thanks for subscribing! Check your inbox for delicious recipes.');
+                this.reset();
+                popup.classList.remove('show');
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+        // ===== Newsletter Section Form =====
+        const newsletterForm = document.getElementById('newsletterForm');
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value.trim();
+            if (email && email.includes('@') && email.includes('.')) {
+                alert('Welcome to our cooking community! You\'ll receive recipes every week.');
+                this.reset();
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+        // ===== Smooth scroll for anchor links =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                // Skip if it's a recipe detail link (handled above)
+                if (targetId.startsWith('#recipe-detail-')) return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    const navHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset -
+                        navHeight - 10;
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ===== Keyboard accessibility =====
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && popup.classList.contains('show')) {
+                popup.classList.remove('show');
+            }
+        });
+
+        // ===== Timer functionality =====
+        let timerInterval = null;
+        let timerSeconds = 0;
+        let isTimerRunning = false;
+
+        window.startTimer = function(minutes) {
+            const display = document.getElementById('timerDisplay1') || document.getElementById('timerDisplay2');
+            const controls = document.getElementById('timerControls1') || document.getElementById('timerControls2');
+            if (!display || !controls) return;
+
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+
+            timerSeconds = minutes * 60;
+            display.style.display = 'block';
+            controls.style.display = 'block';
+            updateTimerDisplay(display);
+
+            isTimerRunning = true;
+            timerInterval = setInterval(() => {
+                timerSeconds--;
+                updateTimerDisplay(display);
+                if (timerSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    timerInterval = null;
+                    isTimerRunning = false;
+                    display.textContent = '⏰ Time\'s up!';
+                    alert('Time is up! Check your dish.');
+                }
+            }, 1000);
+        };
+
+        window.pauseTimer = function() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+                isTimerRunning = false;
+            }
+        };
+
+        window.resetTimer = function() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            isTimerRunning = false;
+            const display = document.getElementById('timerDisplay1') || document.getElementById('timerDisplay2');
+            const controls = document.getElementById('timerControls1') || document.getElementById('timerControls2');
+            if (display) {
+                timerSeconds = 0;
+                display.style.display = 'none';
+                display.textContent = '00:00';
+            }
+            if (controls) controls.style.display = 'none';
+        };
+
+        function updateTimerDisplay(display) {
+            if (!display) return;
+            const mins = Math.floor(timerSeconds / 60);
+            const secs = timerSeconds % 60;
+            display.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }
+
+        // ===== Schema.org JSON-LD (Organization) =====
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Flavor Haven",
+            "url": "https://flavorhaven.com",
+            "logo": "https://flavorhaven.com/logo.png",
+            "description": "Delicious recipes for every kitchen. Simple recipes, expert cooking tips, and fresh meal ideas.",
+            "sameAs": [
+                "https://facebook.com/flavorhaven",
+                "https://instagram.com/flavorhaven",
+                "https://pinterest.com/flavorhaven"
+            ]
+        });
+        document.head.appendChild(script);
+
+        // ===== Recipe Schema (for the first recipe) =====
+        const recipeSchema = {
+            "@context": "https://schema.org",
+            "@type": "Recipe",
+            "name": "Creamy Garlic Pasta",
+            "description": "Rich, creamy, and packed with garlic flavor — this pasta is a weeknight favorite.",
+            "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&h=500&fit=crop&crop=center",
+            "author": { "@type": "Organization", "name": "Flavor Haven" },
+            "datePublished": "2026-01-15",
+            "prepTime": "PT10M",
+            "cookTime": "PT15M",
+            "totalTime": "PT25M",
+            "recipeYield": "4 servings",
+            "recipeIngredient": [
+                "400g pasta",
+                "4 cloves garlic",
+                "1 cup heavy cream",
+                "1/2 cup Parmesan cheese",
+                "2 tbsp olive oil"
+            ],
+            "recipeInstructions": [
+                { "@type": "HowToStep", "text": "Cook pasta according to package instructions." },
+                { "@type": "HowToStep", "text": "Sauté garlic in olive oil until fragrant." },
+                { "@type": "HowToStep", "text": "Add cream and simmer until thickened." },
+                { "@type": "HowToStep", "text": "Stir in Parmesan cheese and season." }
+            ],
+            "nutrition": {
+                "@type": "NutritionInformation",
+                "calories": "420 kcal",
+                "proteinContent": "14g",
+                "carbohydrateContent": "52g",
+                "fatContent": "18g"
+            }
+        };
+
+        const recipeScript = document.createElement('script');
+        recipeScript.type = 'application/ld+json';
+        recipeScript.textContent = JSON.stringify(recipeSchema);
+        document.head.appendChild(recipeScript);
+
+        // ===== FAQ Schema =====
+        const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                { "@type": "Question", "name": "How do I print a recipe?",
+                    "acceptedAnswer": { "@type": "Answer",
+                        "text": "Click the 'Print' button on any recipe detail page or use your browser's print function." } },
+                { "@type": "Question", "name": "Can beginners cook these recipes?",
+                    "acceptedAnswer": { "@type": "Answer",
+                        "text": "Absolutely! All our recipes are tested and written with clear, step-by-step instructions." } },
+                { "@type": "Question", "name": "Are the recipes free?",
+                    "acceptedAnswer": { "@type": "Answer",
+                        "text": "Yes! All recipes on Flavor Haven are completely free to access." } }
+            ]
+        };
+
+        const faqScript = document.createElement('script');
+        faqScript.type = 'application/ld+json';
+        faqScript.textContent = JSON.stringify(faqSchema);
+        document.head.appendChild(faqScript);
+
+        console.log('🍳 Flavor Haven — website loaded successfully!');
+    });
+</script>
+
+</body>
+</html>
